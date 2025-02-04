@@ -1,0 +1,92 @@
+{
+    "id": "/subscriptions//subscriptions/resourceGroups/Labs02/providers/Microsoft.KeyVault/vaults/mialma",
+    "name": "mialma",
+    "type": "Microsoft.KeyVault/vaults",
+    "location": "eastus",
+    "tags": {
+        "Environment": "Production",
+        "Department": "IT",
+        "CostCenter": "12345"
+    },
+    "properties": {
+        "sku": {
+            "family": "A",
+            "name": "Standard"
+        },
+        "tenantId": "02f575bb-1fc3-4c89-a50f-f3256c6c0371",
+        "networkAcls": {
+            "bypass": "None",
+            "defaultAction": "Allow",
+            "ipRules": [],
+            "virtualNetworkRules": []
+        },
+        "accessPolicies": [
+            {
+                "tenantId": "02f575bb-1fc3-4c89-a50f-f3256c6c0371",
+                "objectId": "3ff0cd01-ba7d-4430-a5d1-279e4e26cd86",
+                "permissions": {
+                    "keys": [
+                        "Get",
+                        "List",
+                        "Update",
+                        "Create",
+                        "Import",
+                        "Delete",
+                        "Recover",
+                        "Backup",
+                        "Restore",
+                        "GetRotationPolicy",
+                        "SetRotationPolicy",
+                        "Rotate"
+                    ],
+                    "secrets": [
+                        "Get",
+                        "List",
+                        "Set",
+                        "Delete",
+                        "Recover",
+                        "Backup",
+                        "Restore"
+                    ],
+                    "certificates": [
+                        "Get",
+                        "List",
+                        "Update",
+                        "Create",
+                        "Import",
+                        "Delete",
+                        "Recover",
+                        "Backup",
+                        "Restore",
+                        "ManageContacts",
+                        "ManageIssuers",
+                        "GetIssuers",
+                        "ListIssuers",
+                        "SetIssuers",
+                        "DeleteIssuers"
+                    ]
+                }
+            },
+            {
+                "tenantId": "02f575bb-1fc3-4c89-a50f-f3256c6c0371",
+                "objectId": "ce3b31ed-055c-4615-aa88-4890680d3611",
+                "permissions": {
+                    "secrets": [
+                        "list",
+                        "get"
+                    ]
+                }
+            }
+        ],
+        "enabledForDeployment": false,
+        "enabledForDiskEncryption": false,
+        "enabledForTemplateDeployment": false,
+        "enableSoftDelete": true,
+        "softDeleteRetentionInDays": 90,
+        "enableRbacAuthorization": true,
+        "enablePurgeProtection": true,
+        "vaultUri": "https://mialma.vault.azure.net/",
+        "provisioningState": "Succeeded"
+    },
+    "apiVersion": "2016-10-01"
+}

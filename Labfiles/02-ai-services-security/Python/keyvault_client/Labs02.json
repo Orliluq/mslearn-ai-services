@@ -1,0 +1,13 @@
+{
+    "id": "/subscriptions/xxxx/resourceGroups/Labs02",
+    "name": "Labs02",
+    "type": "Microsoft.Resources/resourceGroups",
+    "location": "eastus",
+    "tags": {
+        "ai-lab": "lab02"
+    },
+    "properties": {
+        "provisioningState": "Succeeded"
+    },
+    "apiVersion": "2020-06-01"
+}
